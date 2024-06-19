@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UoW Hindu Society & NHSF Collaboration</title>
+    <link rel="stylesheet" href="affiliate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+<body>
+    <header>
+        <a href="Home.html"><img src="Images/Hindusoclogo.png" alt="UoW Hindu Society Logo" class="logo"></a>
+        <h1>UoW Hindu Society</h1>
+        <nav>
+            <div class="burger-menu" id="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="home.html">About Us</a></li>
+                <li><a href="nhsfaffiliate.html">About NHSF</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="mailto:hindu.soc@su.westminster.ac.uk">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button class="accessibility-button" onclick="toggleAccessibilityMenu()">
+            <span class="material-symbols-outlined">accessibility</span> 
+        </button>
+        <div class="accessibility-menu" id="accessibility-menu">
+            <button onclick="increaseFontSize()">A+</button>
+            <button onclick="decreaseFontSize()">A-</button>
+            <button onclick="toggleHighContrast()">High Contrast</button>
+            <button onclick="resetView()">Normal View</button>
+            <button onclick="toggleColorBlindMode()">Color Blind Mode</button>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About NHSF</h2>
+            <p>The National Hindu Students' Forum (NHSF) is the largest Hindu student body in the UK, dedicated to promoting Hindu Dharma and supporting students in their spiritual and academic journeys. Established in 1991, NHSF aims to create a platform for Hindu students to connect, share, and grow through various cultural, educational, and community activities.</p>
+            <p>NHSF works to preserve, protect, and promote Hindu traditions, values, and principles among students. Through a range of events, workshops, and initiatives, NHSF fosters a sense of belonging and provides opportunities for personal and spiritual growth. By affiliating with various university Hindu societies, NHSF creates a strong network of students who can collaborate, share resources, and celebrate their heritage together.</p>
+        </div>
+        <a href="https://www.nhsf.org.uk/about-us-3/"><img src="Images/NHSF.png" alt="NHSF Logo" class="NHSF"></a>
+    </section>
+
+    <section id="events" class="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <h3>Committee Day 2024</h3>
+                <p>🗓 Date: Saturday 22nd June 2024<br>
+                🕰 Meeting Time: 8.30 hours - 17.00 hours (free lunch provided)<br>
+                📍Venue: The University of Leicester, University Road, Leicester, LE1 7RH</p>
+                <p>Namaste,</p>
+                <p>Calling all Chapter Committees from our NHSF (UK) Parivaar. National Hindu Students’ Forum (UK) would like to invite you to the 🥁 NHSF June Committees’ Day 2024. As newly elected committee members, we welcome you to your first event 🎉</p>
+                <p>This will be an amazing chance to meet and collaborate with other Hindu societies and to harness your potential within, so gather your Hindu Soc squad to get prepared for the year ahead!</p>
+                <p>The day will be jam-packed with workshops, sessions and tips on how to take your society to a whole new level and tap into your creativity. 📊 During the day, you will get the opportunity to:</p>
+                <ul>
+                    <li>Build a lasting network and make friends with members from 51 other universities (and us!)</li>
+                    <li>Inspire new ideas for your events and initiatives</li>
+                    <li>Develop your understanding of NHSF (UK) and the skills that will help your society soar to new heights</li>
+                </ul>
+                <p>It’s a day you don’t want to miss!</p>
+                <p>Make sure to register on the google forms link below:<br>
+                <a href="https://forms.gle/tMEXSHRjsBar9VGT9">Google Form</a></p>
+                <p>If you have any questions, don’t hesitate to get in touch!</p>
+                <p>#NHSFUK #UnleashYourPotential #JCD24</p>
+            </div>
+            <div class="event">
+                <h3>Yoga and Meditation Workshop</h3>
+                <p>Date: November 10, 2024</p>
+                <p>Participate in our workshop to learn and practice ancient techniques of yoga and meditation, promoting a balanced and healthy lifestyle.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have any questions or want to get involved? Reach out to us on the below socials:</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/uow_hindusoc/"><img src="Images/instagram.png" alt="@uow_hindusoc instagram" class="insta"></a>
+                <p>@uow_hindusoc</p>
+                <a href="https://www.instagram.com/nhsf_uk/"><img src="Images/instagram.png" alt="@nhsf_uk instagram" class="insta"></a>
+                <p>@nhsf_uk</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p>&copy; 2024 UoW Hindu Society. All rights reserved.</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/uow_hindusoc/"><img src="Images/instagram.png" alt="@uow_hindusoc instagram" class="insta"></a>
+            <a href="https://www.tiktok.com/@uow_hindusoc?lang=en"><img src="Images/tik-tok.png" alt="@uow_hindusoc tiktok" class="tiktok"></a>
+            <p>@uow_hindusoc</p>
+        </div>
+    </footer>
+
+    <script>
+        const burgerMenu = document.getElementById('burger-menu');
+        const navLinks = document.getElementById('nav-menu');
+        const accessibilityMenu = document.getElementById('accessibility-menu');
+
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            burgerMenu.classList.toggle('active');
+        });
+
+        function toggleAccessibilityMenu() {
+            accessibilityMenu.classList.toggle('show');
+        }
+
+        function increaseFontSize() {
+            document.body.style.fontSize = 'larger';
+        }
+
+        function decreaseFontSize() {
+            document.body.style.fontSize = 'smaller';
+        }
+
+        function toggleColorBlindMode() {
+            document.body.classList.toggle('color-blind');
+        }
+
+        function toggleHighContrast() {
+            document.body.classList.toggle('high-contrast');
+        }
+
+        function resetView() {
+            document.body.style.fontSize = '';
+            document.body.classList.remove('color-blind');
+            document.body.classList.remove('high-contrast');
+        }
+    </script>
+</body>
+</html>
